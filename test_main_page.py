@@ -1,5 +1,6 @@
 import time
 from .pages.main_page import MainPage
+from .pages.login_page import LoginPage
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -15,3 +16,9 @@ def test_guest_should_see_login_link(browser):
     page = MainPage(browser, link)
     page.open()
     page.should_be_login_link()
+
+def test_guest_should_see_login_page(browser):
+    link = "https://selenium1py.pythonanywhere.com/accounts/login/"
+    page = LoginPage(browser, link)
+    page.open()
+    page.should_be_login_page()
