@@ -4,7 +4,6 @@ from .pages.login_page import LoginPage
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from .pages.login_page import LoginPage
 
 
 # def test_guest_can_go_to_login_page(browser):
