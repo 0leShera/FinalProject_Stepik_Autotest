@@ -1,5 +1,5 @@
 import pytest
-import chromedriver_binary
+# import chromedriver_binary
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
