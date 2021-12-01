@@ -22,7 +22,7 @@ class ProductPage(BasePage):
                 f"The price is not correct: '{book_price}' instead of '{price_massage}'"
 
     def is_not_success_massage_present(self):
-        assert self.is_not_element_present(*ProductPageLocators.SUCCESS_MESSAGES), "Wrong show success message"
+        assert self.is_not_element_present(*ProductPageLocators.SUCCESS_MESSAGES), "Invalid success message"
 
     def should_be_disappeared_message_after_adding_product(self):
-        assert self.is_disappeared(*ProductPageLocators.SUCCESS_MESSAGES), "Wrong show success message"
+        assert self.is_disappeared(*ProductPageLocators.SUCCESS_MESSAGES), "Invalid success message"
